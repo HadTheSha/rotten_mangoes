@@ -24593,3 +24593,81 @@ Processing by Admin::UsersController#index as */*
 Completed 200 OK in 2825ms (Views: 2107.0ms | ActiveRecord: 11.8ms)
 
 
+Started GET "/" for 10.0.2.2 at 2016-08-18 20:57:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (6.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[36mReview Exists (3.0ms)[0m  [1m[34mSELECT  1 AS one FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT ?[0m  [["movie_id", 2], ["LIMIT", 1]]
+  [1m[36mReview Exists (3.4ms)[0m  [1m[34mSELECT  1 AS one FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT ?[0m  [["movie_id", 4], ["LIMIT", 1]]
+  Rendered movies/index.html.erb within layouts/application (372.8ms)
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (78.5ms)
+Completed 200 OK in 1493ms (Views: 1165.4ms | ActiveRecord: 34.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-08-18 20:57:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as */*
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (3.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[36mReview Exists (4.0ms)[0m  [1m[34mSELECT  1 AS one FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT ?[0m  [["movie_id", 2], ["LIMIT", 1]]
+  [1m[36mReview Exists (3.1ms)[0m  [1m[34mSELECT  1 AS one FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT ?[0m  [["movie_id", 4], ["LIMIT", 1]]
+  Rendered movies/index.html.erb within layouts/application (24.4ms)
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (5.9ms)
+Completed 200 OK in 2703ms (Views: 2040.9ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-08-18 20:58:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (3.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[36mReview Exists (3.2ms)[0m  [1m[34mSELECT  1 AS one FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT ?[0m  [["movie_id", 2], ["LIMIT", 1]]
+  [1m[36mReview Exists (3.4ms)[0m  [1m[34mSELECT  1 AS one FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT ?[0m  [["movie_id", 4], ["LIMIT", 1]]
+  Rendered movies/index.html.erb within layouts/application (20.0ms)
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (6.4ms)
+Completed 200 OK in 897ms (Views: 820.1ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-08-18 20:58:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as */*
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (17.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[36mReview Exists (4.4ms)[0m  [1m[34mSELECT  1 AS one FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT ?[0m  [["movie_id", 2], ["LIMIT", 1]]
+  [1m[36mReview Exists (3.9ms)[0m  [1m[34mSELECT  1 AS one FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT ?[0m  [["movie_id", 4], ["LIMIT", 1]]
+  Rendered movies/index.html.erb within layouts/application (42.2ms)
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (8.0ms)
+Completed 200 OK in 2631ms (Views: 1925.7ms | ActiveRecord: 30.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-08-18 20:58:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (6.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[36mReview Exists (2.9ms)[0m  [1m[34mSELECT  1 AS one FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT ?[0m  [["movie_id", 2], ["LIMIT", 1]]
+  [1m[36mReview Exists (3.0ms)[0m  [1m[34mSELECT  1 AS one FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT ?[0m  [["movie_id", 4], ["LIMIT", 1]]
+  Rendered movies/index.html.erb within layouts/application (22.2ms)
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (7.9ms)
+Completed 200 OK in 737ms (Views: 662.2ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-08-18 20:58:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as */*
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (2.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[36mReview Exists (2.9ms)[0m  [1m[34mSELECT  1 AS one FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT ?[0m  [["movie_id", 2], ["LIMIT", 1]]
+  [1m[36mReview Exists (2.8ms)[0m  [1m[34mSELECT  1 AS one FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT ?[0m  [["movie_id", 4], ["LIMIT", 1]]
+  Rendered movies/index.html.erb within layouts/application (18.3ms)
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_footer.html.erb (8.5ms)
+Completed 200 OK in 2739ms (Views: 2082.1ms | ActiveRecord: 12.1ms)
+
+
