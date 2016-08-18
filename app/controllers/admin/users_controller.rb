@@ -51,9 +51,15 @@ class Admin::UsersController < ApplicationController
     end
   end
 
+  # def impersonate
+  #   session[:admin_user_id] = current_user.id
+  #   session[]
+  # end 
+
   # DELETE /admin/users/1
   # DELETE /admin/users/1.json
   def destroy
+    UserMailer.deleted_email(@admin_user).deliver_now
     @admin_user.destroy
     respond_to do |format|
       format.html { redirect_to admin_users_url, notice: 'User was successfully destroyed.' }
