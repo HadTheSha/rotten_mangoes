@@ -34,4 +34,28 @@ class Movie < ApplicationRecord
       errors.add(:release_date, "should be in the past")
     end
   end
+
+  def self.title(title) 
+    where("title like ?", "%#{title}%")
+  end
+
+  def self.director(director) 
+    where("director like ?", "%#{director}%")
+  end
+
+  def duratin_under_90(duration)
+     duration = where("runtime_in_minutes < ?", 90)
+  end  
+  def duratin_above_90_under_120(duration)
+      duration = where("runtime_in_minutes > ?", 90..120)
+  end 
+  def duratin_above_90(duration)
+    duration = where("runtime_in_minutes > ?", 120)
+  end 
+
 end
+
+
+
+
+
