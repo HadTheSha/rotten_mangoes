@@ -2,7 +2,7 @@
 <form class="navbar-form navbar-left" role="search">
   <div class="form-group">
      <%= form_tag("/", method: "get") do %>
-      <%= label_tag(:search, "title or director:") %>
+      <%= label_tag(:search, "Title or Director:") %>
       <%= text_field_tag(:search, params[:search]) %>
       <%= label_tag(:duration, "Duration") %>
        <%= select_tag'duration', options_for_select([["Under 90 minutes", 1], ["Between 90 and 120 minutes", 2], ["Over 120 minutes", 3]]) %>  
