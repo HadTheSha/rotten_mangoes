@@ -1,10 +1,8 @@
 class MoviesController < ApplicationController
 
   def index
-    if Movie.title(params[:title]).present?
-      @movies = Movie.title(params[:title])
-    elsif Movie.director(params[:director]).present?
-      @movies = Movie.director(params[:director])
+    if Movie.search(params[:search])
+      @movies = Movie.search(params[:search])
     elsif params[:duration] == 1.to_s
       @movies = Movie.duratin_under_90(params[:duration]) 
     elsif params[:duration] == 2.to_s
@@ -58,7 +56,7 @@ class MoviesController < ApplicationController
 
   def movie_params
     params.require(:movie).permit(
-      :title, :release_date, :director, :runtime_in_minutes, :image, :description
+      :title, :release_date, :director, :runtime_in_minutes, :image, :description, :search
     )
   end
 

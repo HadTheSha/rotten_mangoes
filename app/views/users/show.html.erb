@@ -1,0 +1,7 @@
+<p>Email : <%= @user.email %></p>
+<p>First name : <%= @user.firstname %></p>
+<p>Last name : <%= @user.lastname %></p>
+<p> Posted reviews : <%  @user.reviews.each do |post| %></p>
+<p> <%= link_to post.movie.title, movie_path(post.movie.id)%> </p>
+<p><%= post.text %></p>
+<p> <%end%> </p>

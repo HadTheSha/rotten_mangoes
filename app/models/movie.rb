@@ -35,12 +35,8 @@ class Movie < ApplicationRecord
     end
   end
 
-  def self.title(title) 
-    where("title like ?", "%#{title}%")
-  end
-
-  def self.director(director) 
-    where("director like ?", "%#{director}%")
+  def self.search(search) 
+    where("title like ? OR director like ?", "%#{search}%", "%#{search}%") 
   end
 
   def duratin_under_90(duration)
@@ -52,7 +48,6 @@ class Movie < ApplicationRecord
   def duratin_above_90(duration)
     duration = where("runtime_in_minutes > ?", 120)
   end 
-
 end
 
 

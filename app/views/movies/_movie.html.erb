@@ -1,0 +1,11 @@
+<div class="col-sm-6 col-md-4">    
+  <a href= "<%= movie_path(movie) %>" class="thumbnail">
+    <img src="<%= movie.image %>" style="width:230px; height:230px" alt=" " >
+      </a>
+  <div class="caption">
+    <h4><%= link_to movie.title, movie_path(movie) %> | <%= movie.review_average %>/10</h4>
+    <h5><%= formatted_date(movie.release_date) %></h5>
+    <h6>Dir. <%= movie.director %> | <%= movie.runtime_in_minutes %> minutes</h6>
+    <p><%= movie.description %></p>
+  </div>
+ </div>
